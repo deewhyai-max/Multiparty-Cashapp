@@ -20,6 +20,42 @@
   input, select, textarea {
     font-size: 16px !important;
   }
+
+  @media (max-width: 640px) {
+    html {
+      font-size: 85%;
+    }
+  }
+}
+
+.purple-glow {
+  border-color: #A020F0 !important;
+  background: rgba(160, 32, 240, 0.05) !important;
+  box-shadow: 0 0 20px rgba(160, 32, 240, 0.2) !important;
+}
+
+.bg-cash-purple {
+  background-color: #A020F0;
+}
+
+@media print {
+  body {
+    background: white !important;
+  }
+  .print\:hidden {
+    display: none !important;
+  }
+  .print\:shadow-none {
+    box-shadow: none !important;
+  }
+  .print\:border-zinc-200 {
+    border-color: #e5e7eb !important;
+  }
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: none !important;
+  }
 }
 
 .purple-glow {
